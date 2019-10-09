@@ -1,5 +1,6 @@
 backend:
-  name: test-repo
+  name: github
+  repo: isaacdpierce/gatsby-theme-blog-ip
 media_folder: static/assets
 public_folder: assets
 collections:
