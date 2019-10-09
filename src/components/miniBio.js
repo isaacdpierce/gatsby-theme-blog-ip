@@ -7,8 +7,6 @@ const MiniBio = () => {
     query {
       file(relativePath: { eq: "avatar.png" }) {
         childImageSharp {
-          # Specify a fluid image and fragment
-          # The default maxWidth is 800 pixels
           fixed(width: 70, height: 70) {
             ...GatsbyImageSharpFixed
           }
@@ -16,7 +14,6 @@ const MiniBio = () => {
       }
     }
   `)
-  console.log(data)
 
   return (
     <div style={{ display: "flex" }}>

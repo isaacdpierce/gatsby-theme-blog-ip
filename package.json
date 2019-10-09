@@ -5,6 +5,7 @@
   "version": "0.1.0",
   "author": "Kyle Mathews <mathews.kyle@gmail.com>",
   "dependencies": {
+    "@emotion/core": "^10.0.21",
     "@mdx-js/mdx": "^1.5.1",
     "@mdx-js/react": "^1.5.1",
     "gatsby": "^2.15.29",
@@ -27,6 +28,7 @@
     "react-typography": "^0.16.19",
     "remark-capitalize": "^1.1.0",
     "remark-emoji": "^2.0.2",
+    "theme-ui": "^0.2.43",
     "typography": "^0.16.19",
     "typography-theme-st-annes": "^0.16.19"
   },
