@@ -1,12 +1,16 @@
+const capitalize = require(`remark-capitalize`)
+const emoji = require(`remark-emoji`)
+
 module.exports = {
   siteMetadata: {
     title: `IP Starter Blog Theme`,
     description: `Inspiring the next phase of human connection and culture.`,
-    author: `@isaacdpierce`,
+    author: `Isaac Pierce`,
+    twitter: `@isaacdpierce`,
+    headline: `Inspiring the next phase of human connection and culture.`,
+    url: `www.isaacpierce.io`,
   },
   plugins: [
-    `gatsby-plugin-react-helmet`,
-    `gatsby-plugin-mdx`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {
@@ -25,7 +29,7 @@ module.exports = {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `posts`,
-        path: `${__dirname}/src/pages/posts/`,
+        path: `${__dirname}/content/posts/`,
       },
     },
     {
@@ -37,11 +41,29 @@ module.exports = {
       },
     },
     {
+      resolve: `gatsby-plugin-mdx`,
+      options: {
+        extensions: [".mdx", ".md"],
+        remarkPlugins: [capitalize, emoji],
+        gatsbyRemarkPlugins: [
+          {
+            resolve: `gatsby-remark-images`,
+            options: {
+              maxWidth: 1035,
+              sizeByPixelDensity: true,
+            },
+          },
+        ],
+      },
+    },
+
+    {
       resolve: `gatsby-plugin-typography`,
       options: {
         pathToConfigModule: `src/utils/typography`,
       },
     },
+    `gatsby-plugin-react-helmet`,
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     `gatsby-transformer-json`,

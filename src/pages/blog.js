@@ -10,7 +10,7 @@ export default () => {
   return (
     <Layout>
       <SEO title="Blog" />
-      <h1>Hi from the Blog page</h1>
+      <h1>Hi from the blog list page</h1>
       <PostList />
     </Layout>
   )
