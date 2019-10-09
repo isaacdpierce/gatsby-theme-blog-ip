@@ -1,13 +1,14 @@
+/** @jsx jsx */
+import React from "react"
+import { jsx } from "theme-ui"
 import { Link, useStaticQuery, graphql } from "gatsby"
 import PropTypes from "prop-types"
-import React from "react"
 
 const ListLink = props => (
   <li
-    style={{
-      display: `inline-block`,
-      marginRight: `1rem`,
-      margin: "0px",
+    sx={{
+      padding: 0,
+      margin: 0,
     }}
   >
     <Link to={props.to}>{props.children}</Link>
@@ -31,9 +32,9 @@ const Header = ({ siteTitle }) => {
 
   return (
     <header
-      style={{
-        background: `#111`,
-        marginBottom: `1.45rem`,
+      sx={{
+        backgroundColor: `muted`,
+        marginBottom: 1,
       }}
     >
       <div

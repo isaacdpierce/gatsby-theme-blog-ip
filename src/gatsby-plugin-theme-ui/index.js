@@ -4,7 +4,6 @@ export default {
     body: "Source Sans Pro",
     heading: "Source Serif Pro",
     monospace: "Fira Code, monospace",
-    ß,
   },
   fontSizes: [12, 16, 18, 21, 24, 33, 48, 64, 96],
   fontWeights: {
@@ -25,9 +24,10 @@ export default {
     modes: {
       dark: {
         text: "#fff",
-        background: "#000",
-        primary: "#73c",
+        background: "#111",
+        primary: "#93c",
         secondary: "#a9c",
+        muted: "#1d1d1d",
       },
     },
   },
@@ -43,6 +43,8 @@ export default {
       lineHeight: "heading",
       fontWeight: "heading",
       fontSize: 5,
+      mt: 4,
+      mb: 2,
     },
     h2: {
       color: "text",

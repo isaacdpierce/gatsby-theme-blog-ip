@@ -7,18 +7,10 @@
 
 Change titles and descritions in gatsby-config.js
 
-## Typography
+## Typography and Styles
 
-Typography.js installed
+Adjust typography/styles in gatsby-plugin-theme/index.js 
 
-To change the typography theme go to src/utils/typography.js
+## Global Styles
 
-Install the Typography theme you want from :
-<https://kyleamathews.github.io/typography.js/>
-
-change the import statement to:
-
-import {newTheme} from "typography-theme-{newTheme}"
-
-
-
+Adjust global styles in globalStyles.js
