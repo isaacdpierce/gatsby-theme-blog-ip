@@ -1,9 +1,9 @@
 {
-  "name": "gatsby-starter-default",
+  "name": "gatsby-theme-blog-ip",
   "private": true,
-  "description": "A simple starter to get up and developing quickly with Gatsby",
+  "description": "A starter theme for blogs. NetlifyCMS, MDX and ThemeUI.",
   "version": "0.1.0",
-  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+  "author": "Isaac Pierce <isaacpierce.dev@gmail.com>",
   "dependencies": {
     "@emotion/core": "^10.0.21",
     "@emotion/styled": "^10.0.17",
@@ -34,8 +34,16 @@
     "theme-ui": "^0.2.44"
   },
   "devDependencies": {
-    "prettier": "^1.18.2"
+    "prettier": "^1.18.2",
+      "gatsby": "^2.9.11",
+      "react": "^16.8.6",
+      "react-dom": "^16.8.6"
   },
+  "peerDependencies": {
+      "gatsby": "^2.9.11",
+      "react": "^16.8.6",
+      "react-dom": "^16.8.6"
+    },
   "keywords": [
     "gatsby"
   ],
