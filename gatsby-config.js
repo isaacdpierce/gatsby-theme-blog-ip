@@ -62,6 +62,7 @@ module.exports = {
     `gatsby-transformer-json`,
     `gatsby-plugin-theme-ui`,
     `gatsby-plugin-emotion`,
+    `gatsby-plugin-netlify-cms`,
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
